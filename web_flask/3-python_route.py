@@ -28,6 +28,7 @@ def display_c_with_text(text):
     return "C {}".format(formatted_text)
 
 
+@app.route('/python/', defaults={'text': 'is cool'}, strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def display_python_with_text(text='is cool'):
     """ Displays 'Python' followed by the value of <text> given """
