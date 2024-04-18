@@ -3,6 +3,7 @@
 
 from flask import Flask
 
+
 app = Flask(__name__)
 
 
@@ -11,6 +12,7 @@ app = Flask(__name__)
 def hello_hbnb():
     """ Displays 'Hello HBNB! """
     return "Hello HBNB!"
+
 
 if __name__ == "__main__":
     # Start the Flask development server
